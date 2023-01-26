@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-
-  <title>Bricando com Bootstrap</title>
+<title>EXEMPLO DE CRUD EM PHP E SQL</title>
 </head>
-
 <body>
-  <img src="assets/sedan.jpg" />
-  <script src="/js/jquery.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+<h1>VAMOS EXEMPLIFICAR O CRUD EM PHP E SQL
+<form action="adicionar.php" method="post">
+NOME : <input type="text" name="nome"></BR>
+LOGIN :<input type="text" name="login"></BR> 
+SENHA : <input type="text" name="senha"></BR>
+<input type = "submit" values="enviar">
+</form>
 </body>
-
 </html>
