@@ -32,7 +32,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </p>
 
     <ul class="faixa">
-        <a href=cadastrar.php><button type="button" class="btn btn-primary">Cadastrar </button></a>
+        <a href=form.php><button type="button" class="btn btn-primary">Cadastrar </button></a>
         <a href=consultar.php><button type="button" class="btn btn-primary">Consultar </button></a>
         <a href=listar.php><button type="button" class="btn btn-primary">Listar </button></a>
         <a href=excluir.php><button type="button" class="btn btn-primary">Excluir </button></a>

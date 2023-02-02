@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,50 +11,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<a href="welcome.php"><button type="text" class="btn btn-primary"> Voltar </button></a>
+
 <body class="color">
-    <form class="row g-3">
+
+
+
+    <form class="row g-3" method="post" id="cadastro" action="conectar.php">
         <div class="mb-3">
-            <label for="Tipo" class="form-label">Tipo</label>
-            <select id="Tipo" class="form-select" placeholder="Informe o tipo do veículo">
-                <option></option>
+            <label for="tipo" class="form-label">Tipo</label>
+            <select id="tipo" name="tipo" class="form-select" placeholder="Informe o tipo do veículo">
+                <option>Carro</option>
+                <option>Moto</option>
             </select>
         </div>
         <div class="col-md-6">
-            <label for="Modelo" class="form-label">Modelo</label>
-            <input type="text" class="form-control" id="Modelo" placeholder="Informe o modelo">
+            <label for="modelo" class="form-label">Modelo</label>
+            <input type="text" name="modelo" class="form-control" id="modelo" placeholder="Informe o modelo">
         </div>
         <div class="col-12">
-            <label for="Ano" class="form-label">Ano</label>
-            <input type="text" class="form-control" id="Ano" placeholder="Informe o ano do veículo">
+            <label for="ano" class="form-label">Ano</label>
+            <input type="number" name="ano" class="form-control" id="ano" placeholder="Informe o ano do veículo">
         </div>
         <div class="col-12">
-            <label for="Marca" class="form-label">Marca</label>
-            <input type="text" class="form-control" id="Marca" placeholder="Ex:Chevrolet">
+            <label for="marca" class="form-label">Marca</label>
+            <input type="text" name="marca" class="form-control" id="marca" placeholder="Ex:Chevrolet">
         </div>
         <div class="mb-3">
-            <label for="Cor" class="form-label">Cor</label>
-            <select id="Cor" class="form-select" placeholder="Informe a cor do veículo">
-                <option></option>
+            <label for="cor" class="form-label">Cor</label>
+            <select id="cor" name="cor" class="form-select" placeholder="Informe a cor do veículo">
+                <option>Amarelo</option>
+                <option>Azul</option>
+                <option>Roxo</option>
+                <option>Preto</option>
+                <option>Grafite</option>
             </select>
         </div>
-        <label for="Acessório">Acessório</label>
+        <label for="acessorio">Acessórios</label>
         <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="Acessório" style="height: 100px"></textarea>
+            <textarea name="acessorio" class="form-control" placeholder="Air-bag, Sensor..." id="acessorio" style="height: 100px"></textarea>
 
         </div>
 
         <div class="mb-3">
-            <label for="Combustível" class="form-label">Combustível</label>
-            <select id="Combustível" class="form-select" placeholder="Gasolina Aditivada/Etanol/Diesel">
-                <option></option>
+            <label for="combustivel" class="form-label">Combustível</label>
+            <select id="combustivel" name="combustivel" class="form-select" placeholder="Gasolina Aditivada/Etanol/Diesel">
+                <option>Gasolina</option>
+                <option>Etanol</option>
+                <option>Diesel</option>
             </select>
         </div>
         <div class="col-12">
             <label for="foto" class="form-label">Foto</label>
-            <input type="text" class="form-control" id="foto" placeholder="Link(URL) da foto">
+            <input type="text" name="foto" class="form-control" id="foto" placeholder="Link(URL) da foto">
         </div>
-
-        <a href=welcome.php><button type="button" class="btn btn-primary">Cadastrar </button></a>
+        <div class="botao">
+            <button type="submit" class="btn btn-primary"> Cadastrar </button>
+        </div>
 
     </form>
 

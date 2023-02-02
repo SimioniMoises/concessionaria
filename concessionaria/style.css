@@ -26,3 +26,7 @@ form label {
   background: linear-gradient(270deg, rgb(231, 224, 115), rgb(192, 255, 239));
 }
 
+.botao {
+  width: 20%;
+  height: 20%;
+}
