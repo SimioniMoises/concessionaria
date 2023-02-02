@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+form label {
+  font-size: 14px;
+  font-family: arial;
+  font-weight: bold;
+  padding: 10px 0px 4px 0px;
+}
+
+.ajuste {
+  color: aqua;
+  font-size: 18px;
+}
+
+.color {
+  background: linear-gradient(270deg, rgb(231, 224, 115), rgb(192, 255, 239));
+}
+
+.faixa {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(270deg, rgb(231, 224, 115), rgb(192, 255, 239));
+}
+
